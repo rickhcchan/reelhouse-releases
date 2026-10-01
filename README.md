@@ -6,9 +6,8 @@ Reelhouse brings catalogue browsing and playback to your Mac or Windows PC, with
 
 ## Download
 
-- **[Stable releases](https://github.com/rickhcchan/reelhouse-releases/releases/latest)** — recommended for everyday use once the first stable version is available.
-- **[Nightly previews](https://github.com/rickhcchan/reelhouse-releases/releases?q=nightly&include_prereleases=true)** — try the newest changes. Previews may contain bugs.
-- **[All releases](https://github.com/rickhcchan/reelhouse-releases/releases)** — choose a specific version and read what changed.
+- **[Stable releases](https://github.com/rickhcchan/reelhouse-releases/releases?q=draft%3Afalse+prerelease%3Afalse)** — recommended for everyday use once the first stable version is available.
+- **[Nightly previews](https://github.com/rickhcchan/reelhouse-releases/releases?q=draft%3Afalse+prerelease%3Atrue)** — try the newest changes. Previews may contain bugs.
 
 If no stable release is available yet, start with a preview while Reelhouse is in development.
 
