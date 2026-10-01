@@ -10,7 +10,7 @@ Reelhouse brings catalogue browsing and playback to your Mac or Windows PC, with
 - **[Nightly previews](https://github.com/rickhcchan/reelhouse-releases/releases?q=nightly&include_prereleases=true)** — try the newest changes. Previews may contain bugs.
 - **[All releases](https://github.com/rickhcchan/reelhouse-releases/releases)** — choose a specific version and read what changed.
 
-There is no stable release yet. Start with a preview while Reelhouse is in development.
+If no stable release is available yet, start with a preview while Reelhouse is in development.
 
 | Your computer | Choose |
 | --- | --- |
@@ -39,10 +39,14 @@ Favourites and watch history are associated with this installation/device; they 
 
 macOS and Windows desktop previews are available. Android TV support is planned; Android and iOS downloads are not available yet.
 
-Nightly previews are built from the latest merged changes when there is something new. Stable releases are published separately after a deliberate release decision.
+Nightly previews are published after changes merge into the main development branch; they are not limited to an overnight schedule. Stable releases are published separately after a deliberate release decision. PR test builds are kept private.
 
 ## Feedback
 
 [Report a problem or suggest an improvement](https://github.com/rickhcchan/reelhouse-releases/issues). Include your app version, operating system and what happened. Please leave out personal file paths, account/device identifiers and credentials.
 
 This repository contains product information and downloadable releases. Development source and build workflows are maintained separately.
+
+## Contributors
+
+Created and maintained by [rickhcchan](https://github.com/rickhcchan), with AI-assisted development by **Codex (OpenAI)**. See [contributor credits](CONTRIBUTORS.md).
