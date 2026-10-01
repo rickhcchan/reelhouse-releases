@@ -1,4 +1,9 @@
 {
   "schemaVersion": 1,
-  "blockedVersions": []
+  "blockedVersions": [
+    {
+      "version": "0.2.0-nightly.20261001.36848543027",
+      "reason": "This nightly has been retired. Please install the latest nightly from the downloads page."
+    }
+  ]
 }
