@@ -13,14 +13,18 @@ If no stable release is available yet, start with a preview while Reelhouse is i
 
 | Your computer | Choose |
 | --- | --- |
-| Mac with Apple Silicon (M-series chip) | The `arm64.dmg` download |
-| Mac with an Intel processor | The `.dmg` download without `arm64` |
-| Windows PC (64-bit Intel/AMD) | The `Setup` `.exe` installer |
-| Windows PC, portable version | The `.exe` download without `Setup` |
+| Mac with Apple Silicon (M-series chip) | `Reelhouse-Mac-Apple-Silicon-<version>.dmg` |
+| Mac with an Intel processor | `Reelhouse-Mac-Intel-<version>.dmg` |
+| Windows PC (64-bit Intel/AMD) | `Reelhouse-Windows-Installer-<version>.exe` |
+| Windows PC, portable version | `Reelhouse-Windows-Portable-<version>.exe` |
 
-Mac ZIP downloads are also available. You do not need Node.js, Python, an IPA or a web server to run a downloaded application. Use the installer assets; GitHub's automatic “Source code” archives contain this downloads page, not the application.
+Filenames include the full version, such as `0.2.0` for stable or `0.2.0-nightly.20261001.12345` for a nightly preview. Mac downloads are DMG only. You do not need Node.js, Python, an IPA or a web server to run a downloaded application.
 
-Current builds are unsigned and macOS builds are not notarized, so your operating system may display a publisher warning. The app checks for updates in your installed channel: nightly or stable. Updates are optional; download and install a newer version when you choose. Only versions explicitly retired by the maintainer are blocked. A version check is required when opening the app and starting a new video; if that check cannot be reached, retry when your connection is available.
+Use the four clearly labelled app downloads. GitHub also adds automatic “Source code” ZIP/TAR links; these contain only this public downloads repository (documentation and screenshots), **not the private application source**. They are not app installers. `SHA256SUMS` and `release-manifest.json` are download-verification files.
+
+Mac builds are ad-hoc signed, but not Developer ID signed or Apple-notarized. After attempting to open the app, macOS may require **System Settings → Privacy & Security → Open Anyway**. Windows builds are unsigned and may display a publisher warning.
+
+The app checks for updates in your installed channel: nightly or stable. Updates are optional; download and install a newer version when you choose. Only versions explicitly retired by the maintainer are blocked. A version check is required when opening the app and starting a new video; if that check cannot be reached, retry when your connection is available.
 
 ## Screenshots
 
