@@ -47,6 +47,10 @@ Nightly previews are published after changes merge into the main development bra
 
 This repository contains product information and downloadable releases. Development source and build workflows are maintained separately.
 
+## Educational project notice
+
+Reelhouse is an independent educational project based on reverse engineering and interoperability research on the **KayakTime / DELvEK iOS app**, and a demonstration of development assisted by AI coding agents and LLMs. It is not an official or affiliated product. Educational use does not grant rights to third-party content or override access restrictions. Read the [full disclaimer](DISCLAIMER.md).
+
 ## Contributors
 
 Created and maintained by [rickhcchan](https://github.com/rickhcchan), with AI-assisted development by **Codex (OpenAI)**. See [contributor credits](CONTRIBUTORS.md).
