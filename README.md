@@ -21,7 +21,28 @@ If no stable release is available yet, start with a preview while Reelhouse is i
 
 Mac ZIP downloads are also available. You do not need Node.js, Python, an IPA or a web server to run a downloaded application. Use the installer assets; GitHub's automatic “Source code” archives contain this downloads page, not the application.
 
-Current builds are unsigned and macOS builds are not notarized, so your operating system may display a publisher warning. Automatic app updates are not available yet; download and install a newer version to update.
+Current builds are unsigned and macOS builds are not notarized, so your operating system may display a publisher warning. The app checks for updates in your installed channel: nightly or stable. Updates are optional; download and install a newer version when you choose. Only versions explicitly retired by the maintainer are blocked. A version check is required when opening the app and starting a new video; if that check cannot be reached, retry when your connection is available.
+
+## Screenshots
+
+Captured from the macOS desktop preview. Catalogue artwork and available titles can change.
+
+**Browse the catalogue**
+
+![Reelhouse catalogue with film and TV collections](screenshots/catalogue.png)
+
+<details>
+<summary>Title details and playback</summary>
+
+**Title details and audio choices**
+
+![Reelhouse film details and audio selection](screenshots/title-details.png)
+
+**Desktop player**
+
+![Reelhouse player with native video controls](screenshots/player.png)
+
+</details>
 
 ## Find something to watch
 
