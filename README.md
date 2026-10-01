@@ -1,8 +1,21 @@
 # Reelhouse
 
-Find your next film or show. Pick up where you left off.
+An educational case study in bringing an iOS application to other platforms with AI-assisted design and development.
 
-Reelhouse brings catalogue browsing and playback to your Mac or Windows PC, with a simple desktop interface and no separate server to set up.
+Reelhouse explores how to understand an existing iOS app, separate its reusable behaviour from its native interface, and implement clients for desktop and TV. **KayakTime / DELvEK** is the example application used for this interoperability research; Reelhouse is an independent experiment, not an official port or an affiliated product.
+
+The interface design comes from **Claude Design (Anthropic)**. **Codex (OpenAI)** assists with implementation, investigation, testing and documentation, with the project owner making decisions and reviewing the results. The aim is to learn what these tools can help with—and where testing and human judgement are still needed.
+
+### What we are learning
+
+- Translating an iOS app's behaviour into clients for other operating systems.
+- Sharing API, session and state logic while adapting networking, controls and presentation to each platform.
+- Turning a Claude Design handoff into a working interface and checking it against the original design.
+- Developing a thick client that runs on the user's device without an application server.
+- Testing AI-assisted work with fixtures, platform checks and real-device validation.
+- Building, versioning and distributing experimental applications reproducibly.
+
+**Current status:** macOS and Windows desktop previews are available. Android TV is in development; iOS follow-up work is for later. These are learning prototypes, with platform limitations documented below. Read the [project disclaimer](DISCLAIMER.md).
 
 ## Download
 
@@ -54,11 +67,11 @@ Windows 11 **Smart App Control** or an administrator's policy may block the app 
 
 The Mac workaround was tested on an installed release. The Windows warning/approval flow has not yet been manually verified on a Windows PC; these instructions follow Microsoft's documentation.
 
-## Screenshots
+## Interface examples
 
-Captured from the macOS desktop preview. Catalogue artwork and available titles can change.
+Screenshots from the macOS prototype show how the example app's interface has been adapted for desktop. Third-party artwork and data may change.
 
-**Browse the catalogue**
+**Collection-based navigation**
 
 ![Reelhouse catalogue with film and TV collections](screenshots/catalogue.png)
 
@@ -75,41 +88,27 @@ Captured from the macOS desktop preview. Catalogue artwork and available titles 
 
 </details>
 
-## Find something to watch
+## Trying the prototype
 
-- Browse film and TV collections, or search for a title.
-- Explore genres, years, rankings and streaming-service collections.
-- Choose a season, episode and available audio language.
-- Watch in fullscreen and resume from your saved position.
-- Keep favourites and recently watched titles close at hand.
+The example application provides practical cases for data-driven navigation, search and filtering, detail screens, native media controls, device identity and saved state. Press **F** to toggle fullscreen and **Esc** to leave fullscreen when testing the player.
 
-Press **F** to toggle fullscreen and **Esc** to leave fullscreen. Playback availability depends on the title and source. An internet connection is required.
-
-Favourites and watch history are associated with this installation/device; they do not currently sync between your computers.
+An internet connection is required. Third-party service availability is outside the project's control. Saved state is currently associated with the installation/device and does not synchronize between computers.
 
 ## What's available
 
 Reelhouse targets macOS and Windows desktop. Downloads appear here as preview builds are published. Android TV support is planned; Android and iOS downloads are not available yet.
 
-Nightly previews are published after changes merge into the main development branch; they are not limited to an overnight schedule. Stable releases are published separately after a deliberate release decision. PR test builds are kept private.
+Nightly previews contain merged development changes; “nightly” is a preview channel, not an overnight schedule. Builds may be produced manually or by automation. Stable releases follow a deliberate release decision, and PR test builds stay private.
 
 ## Feedback
 
 [Report a problem or suggest an improvement](https://github.com/rickhcchan/reelhouse-releases/issues). Include your app version, operating system and what happened. Please leave out personal file paths, account/device identifiers and credentials.
 
-This repository contains product information and downloadable releases. Development source and build workflows are maintained separately.
+This repository contains the case-study overview, prototype downloads and feedback. Development source and build workflows are maintained separately.
 
 ## Educational project notice
 
 Reelhouse is an independent educational project based on reverse engineering and interoperability research on the **KayakTime / DELvEK iOS app**, and a demonstration of development assisted by AI coding agents and LLMs. The UI design comes from **Claude Design (Anthropic)**; **Codex (OpenAI)** assists with implementation, investigation, testing, documentation and release automation, under the project owner’s direction and review. It is not an official or affiliated product. Educational use does not grant rights to third-party content or override access restrictions. Read the [full disclaimer](DISCLAIMER.md).
-
-### What we are learning
-
-- Turning a Claude Design handoff into a working desktop interface with Codex.
-- Understanding existing app and API behaviour through bounded interoperability research.
-- Building a serverless client and reusable logic for future platforms.
-- Checking AI-assisted implementation with fixture tests, real-device testing and human review.
-- Producing repeatable Mac/Windows builds and controlled releases through GitHub Actions.
 
 This is a record of experimentation with these tools, not a claim that AI-generated designs or code are automatically correct.
 
