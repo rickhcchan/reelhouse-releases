@@ -33,7 +33,7 @@ If no stable release is available yet, start with a preview while Reelhouse is i
 
 Filenames include the full version, such as `0.2.0` for stable or `0.2.0-nightly.20261001.12345` for a nightly preview. Mac downloads are DMG only. You do not need Node.js, Python, an IPA or a web server to run a downloaded application.
 
-Use the four clearly labelled app downloads. GitHub also adds automatic “Source code” ZIP/TAR links; these contain only this public downloads repository (documentation and screenshots), **not the private application source**. They are not app installers. `SHA256SUMS` and `release-manifest.json` are download-verification files.
+Use the four clearly labelled app downloads. GitHub also adds automatic “Source code” ZIP/TAR links; these contain only this public downloads repository, **not the private application source**. They are not app installers. `SHA256SUMS` and `release-manifest.json` are download-verification files.
 
 Current Mac builds are not Apple-notarized and Windows builds are unsigned. See the [installation instructions](#installation-and-security-warnings) below if your operating system blocks opening the app.
 
@@ -66,27 +66,6 @@ For an unrecognized-app warning, if you trust this repository's download and the
 Windows 11 **Smart App Control** or an administrator's policy may block the app without a **Run anyway** option. Smart App Control has no individual-app exception; the current preview may not run in that configuration. See [Microsoft's Smart App Control FAQ](https://support.microsoft.com/en-us/windows/security/threat-malware-protection/smart-app-control-frequently-asked-questions).
 
 The Mac workaround was tested on an installed release. The Windows warning/approval flow has not yet been manually verified on a Windows PC; these instructions follow Microsoft's documentation.
-
-## Interface examples
-
-Screenshots from the macOS prototype show how the example app's interface has been adapted for desktop. Third-party artwork and data may change.
-
-**Collection-based navigation**
-
-![Reelhouse catalogue with film and TV collections](screenshots/catalogue.png)
-
-<details>
-<summary>Title details and playback</summary>
-
-**Title details and audio choices**
-
-![Reelhouse film details and audio selection](screenshots/title-details.png)
-
-**Desktop player**
-
-![Reelhouse player with native video controls](screenshots/player.png)
-
-</details>
 
 ## Trying the prototype
 
