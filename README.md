@@ -37,7 +37,7 @@ Favourites and watch history are associated with this installation/device; they 
 
 ## What's available
 
-macOS and Windows desktop previews are available. Android TV support is planned; Android and iOS downloads are not available yet.
+Reelhouse targets macOS and Windows desktop. Downloads appear here as preview builds are published. Android TV support is planned; Android and iOS downloads are not available yet.
 
 Nightly previews are published after changes merge into the main development branch; they are not limited to an overnight schedule. Stable releases are published separately after a deliberate release decision. PR test builds are kept private.
 
