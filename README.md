@@ -70,8 +70,18 @@ This repository contains product information and downloadable releases. Developm
 
 ## Educational project notice
 
-Reelhouse is an independent educational project based on reverse engineering and interoperability research on the **KayakTime / DELvEK iOS app**, and a demonstration of development assisted by AI coding agents and LLMs. It is not an official or affiliated product. Educational use does not grant rights to third-party content or override access restrictions. Read the [full disclaimer](DISCLAIMER.md).
+Reelhouse is an independent educational project based on reverse engineering and interoperability research on the **KayakTime / DELvEK iOS app**, and a demonstration of development assisted by AI coding agents and LLMs. The UI design comes from **Claude Design (Anthropic)**; **Codex (OpenAI)** assists with implementation, investigation, testing, documentation and release automation, under the project owner’s direction and review. It is not an official or affiliated product. Educational use does not grant rights to third-party content or override access restrictions. Read the [full disclaimer](DISCLAIMER.md).
+
+### What we are learning
+
+- Turning a Claude Design handoff into a working desktop interface with Codex.
+- Understanding existing app and API behaviour through bounded interoperability research.
+- Building a serverless client and reusable logic for future platforms.
+- Checking AI-assisted implementation with fixture tests, real-device testing and human review.
+- Producing repeatable Mac/Windows builds and controlled releases through GitHub Actions.
+
+This is a record of experimentation with these tools, not a claim that AI-generated designs or code are automatically correct.
 
 ## Contributors
 
-Created and maintained by [rickhcchan](https://github.com/rickhcchan), with AI-assisted development by **Codex (OpenAI)**. See [contributor credits](CONTRIBUTORS.md).
+Created and maintained by [rickhcchan](https://github.com/rickhcchan), with UI design from **Claude Design (Anthropic)** and AI-assisted development by **Codex (OpenAI)**. See [contributor credits](CONTRIBUTORS.md).
