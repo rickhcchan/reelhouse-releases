@@ -20,7 +20,7 @@ The interface design comes from **Claude Design (Anthropic)**. **Codex (OpenAI)*
 ## Download
 
 - **[Stable releases](https://github.com/rickhcchan/reelhouse-releases/releases?q=draft%3Afalse+prerelease%3Afalse)** — recommended for everyday use once the first stable version is available.
-- **[Nightly previews](https://github.com/rickhcchan/reelhouse-releases/releases?q=draft%3Afalse+prerelease%3Atrue)** — try the newest changes. Previews may contain bugs.
+- **[Preview releases](https://github.com/rickhcchan/reelhouse-releases/releases?q=draft%3Afalse+prerelease%3Atrue)** — nightly builds and explicitly published development snapshots. Previews may contain bugs; check each release for the platforms included.
 
 If no stable release is available yet, start with a preview while Reelhouse is in development.
 
@@ -33,11 +33,13 @@ If no stable release is available yet, start with a preview while Reelhouse is i
 
 Filenames include the full version, such as `0.2.0` for stable or `0.2.0-nightly.20261001.12345` for a nightly preview. Mac downloads are DMG only. You do not need Node.js, Python, an IPA or a web server to run a downloaded application.
 
-Use the four clearly labelled app downloads. GitHub also adds automatic “Source code” ZIP/TAR links; these contain only this public downloads repository, **not the private application source**. They are not app installers. `SHA256SUMS` and `release-manifest.json` are download-verification files.
+Choose the labelled app download for your platform. Some development snapshots include only Mac packages. GitHub also adds automatic “Source code” ZIP/TAR links; these contain only this public downloads repository, **not the private application source**. They are not app installers. `SHA256SUMS` and `release-manifest.json` are download-verification files.
 
 Current Mac builds are not Apple-notarized and Windows builds are unsigned. See the [installation instructions](#installation-and-security-warnings) below if your operating system blocks opening the app.
 
 The app checks for updates in your installed channel: nightly or stable. Updates are optional; download and install a newer version when you choose. Only versions explicitly retired by the maintainer are blocked. A version check is required when opening the app and starting a new video; if that check cannot be reached, retry when your connection is available.
+
+Development snapshots with `-pr` in their version also enforce the version policy, but do not offer nightly/stable update notifications. Install subsequent builds manually.
 
 ## Installation and security warnings
 
@@ -77,7 +79,7 @@ An internet connection is required. Third-party service availability is outside 
 
 Reelhouse targets macOS and Windows desktop. Downloads appear here as preview builds are published. Android TV support is planned; Android and iOS downloads are not available yet.
 
-Nightly previews contain merged development changes; “nightly” is a preview channel, not an overnight schedule. Builds may be produced manually or by automation. Stable releases follow a deliberate release decision, and PR test builds stay private.
+Nightly previews contain merged development changes; “nightly” is a preview channel, not an overnight schedule. Builds may be produced manually or by automation. Stable releases follow a deliberate release decision. PR test builds normally stay private; the project owner may explicitly publish a development snapshot with its original version and documented test scope.
 
 ## Feedback
 
