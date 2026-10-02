@@ -15,7 +15,7 @@ The interface design comes from **Claude Design (Anthropic)**. **Codex (OpenAI)*
 - Testing AI-assisted work with fixtures, platform checks and real-device validation.
 - Building, versioning and distributing experimental applications reproducibly.
 
-**Current status:** macOS and Windows desktop previews are available. Android TV is in development; iOS follow-up work is for later. These are learning prototypes, with platform limitations documented below. Read the [project disclaimer](DISCLAIMER.md).
+**Current status:** macOS, Windows and Android TV previews are available. iOS follow-up work is for later. These are learning prototypes, with platform limitations documented below. Read the [project disclaimer](DISCLAIMER.md).
 
 ## Download
 
@@ -24,12 +24,13 @@ The interface design comes from **Claude Design (Anthropic)**. **Codex (OpenAI)*
 
 If no stable release is available yet, start with a preview while Reelhouse is in development.
 
-| Your computer | Choose |
+| Your device | Choose |
 | --- | --- |
 | Mac with Apple Silicon (M-series chip) | `Reelhouse-Mac-Apple-Silicon-<version>.dmg` |
 | Mac with an Intel processor | `Reelhouse-Mac-Intel-<version>.dmg` |
 | Windows PC (64-bit Intel/AMD) | `Reelhouse-Windows-Installer-<version>.exe` |
 | Windows PC, portable version | `Reelhouse-Windows-Portable-<version>.exe` |
+| Android TV / compatible Android box (Android 8+) | `Reelhouse-Android-TV-<version>.apk` |
 
 Filenames include the full version, such as `0.2.0` for stable or `0.2.0-nightly.20261001.12345` for a nightly preview. Mac downloads are DMG only. You do not need Node.js, Python, an IPA or a web server to run a downloaded application.
 
@@ -67,6 +68,12 @@ Windows 11 **Smart App Control** or an administrator's policy may block the app 
 
 The Mac workaround was tested on an installed release. The Windows warning/approval flow has not yet been manually verified on a Windows PC; these instructions follow Microsoft's documentation.
 
+### Android TV
+
+Download the Android TV APK and transfer it to your box. Open it with the box's file manager, allowing that app to install unknown apps if Android asks. Open **Reelhouse** and use the directional pad, OK and Back on your remote.
+
+Install later APKs over the existing app to keep its saved data. Development builds named **Reelhouse Preview** are separate installations with separate saved data.
+
 ## Trying the prototype
 
 The example application provides practical cases for data-driven navigation, search and filtering, detail screens, native media controls, device identity and saved state. Press **F** to toggle fullscreen and **Esc** to leave fullscreen when testing the player.
@@ -75,7 +82,7 @@ An internet connection is required. Third-party service availability is outside 
 
 ## What's available
 
-Reelhouse targets macOS and Windows desktop. Downloads appear here as preview builds are published. Android TV support is planned; Android and iOS downloads are not available yet.
+Preview downloads are available for macOS, Windows and Android TV. iOS downloads are not available yet.
 
 Nightly previews contain merged development changes from `main`; “nightly” is a preview channel, not an overnight schedule. Builds may be produced manually or by automation. Stable releases follow a deliberate release decision. PR test builds stay private and are never published to this downloads repository.
 
