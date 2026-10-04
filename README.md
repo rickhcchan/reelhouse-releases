@@ -15,14 +15,14 @@ The interface design comes from **Claude Design (Anthropic)**. **Codex (OpenAI)*
 - Testing AI-assisted work with fixtures, platform checks and real-device validation.
 - Building, versioning and distributing experimental applications reproducibly.
 
-**Current status:** macOS, Windows and Android TV previews are available. iOS follow-up work is for later. These are learning prototypes, with platform limitations documented below. Read the [project disclaimer](DISCLAIMER.md).
+**Current status:** macOS, Windows and Android TV downloads are available. Experimental iPhone/iPad builds are included in nightlies only, for sideload feedback; integrated iOS device validation is pending. These are learning prototypes, with platform limitations documented below. Read the [project disclaimer](DISCLAIMER.md).
 
 ## Download
 
-- **[Stable releases](https://github.com/rickhcchan/reelhouse-releases/releases?q=draft%3Afalse+prerelease%3Afalse)** — recommended for everyday use once the first stable version is available.
+- **[Stable releases](https://github.com/rickhcchan/reelhouse-releases/releases?q=draft%3Afalse+prerelease%3Afalse)** — deliberate releases for Mac, Windows and Android TV.
 - **[Nightly previews](https://github.com/rickhcchan/reelhouse-releases/releases?q=draft%3Afalse+prerelease%3Atrue)** — builds from merged changes on `main`. Previews may contain bugs.
 
-If no stable release is available yet, start with a preview while Reelhouse is in development.
+iPhone/iPad testers should choose the latest nightly; stable releases do not include iOS.
 
 | Your device | Choose |
 | --- | --- |
@@ -31,8 +31,9 @@ If no stable release is available yet, start with a preview while Reelhouse is i
 | Windows PC (64-bit Intel/AMD) | `Reelhouse-Windows-Installer-<version>.exe` |
 | Windows PC, portable version | `Reelhouse-Windows-Portable-<version>.exe` |
 | Android TV / compatible Android box (Android 8+) | `Reelhouse-Android-TV-<version>.apk` |
+| iPhone / iPad (iOS/iPadOS 15.4+, experimental nightly only) | `Reelhouse-iOS-Unsigned-<version>.ipa` |
 
-Filenames include the full version, such as `0.2.0` for stable or `0.2.0-nightly.20261001.12345` for a nightly preview. Mac downloads are DMG only. You do not need Node.js, Python, an IPA or a web server to run a downloaded application.
+Filenames include the full version, such as `0.2.0` for stable or `0.2.0-nightly.20261001.12345` for a nightly preview. Mac downloads are DMG only. Downloaded apps include their runtime; no application server is required. The iOS IPA requires signing through your sideloader.
 
 Choose the labelled app download for your platform. GitHub also adds automatic “Source code” ZIP/TAR links; these contain only this public downloads repository, **not the private application source**. They are not app installers. `SHA256SUMS` and `release-manifest.json` are download-verification files.
 
@@ -74,6 +75,10 @@ Download the Android TV APK and transfer it to your box. Open it with the box's 
 
 Install later APKs over the existing app to keep its saved data. Development builds named **Reelhouse Preview** are separate installations with separate saved data.
 
+### iPhone / iPad — experimental
+
+Download the unsigned IPA from a nightly release and sign/install it with your sideloader, such as iLoader or Sideloadly. This is a GitHub sideload build, not an Apple TestFlight invitation. Actual-device feedback is needed; PiP and AirPlay are disabled. iOS update notices stay on the nightly channel.
+
 ## Trying the prototype
 
 The example application provides practical cases for data-driven navigation, search and filtering, detail screens, native media controls, device identity and saved state. Press **F** to toggle fullscreen and **Esc** to leave fullscreen when testing the player.
@@ -82,7 +87,7 @@ An internet connection is required. Third-party service availability is outside 
 
 ## What's available
 
-Preview downloads are available for macOS, Windows and Android TV. iOS downloads are not available yet.
+Preview downloads are available for macOS, Windows and Android TV. Experimental iOS downloads use the same nightly version and are excluded from stable releases.
 
 Nightly previews contain merged development changes from `main`; “nightly” is a preview channel, not an overnight schedule. Builds may be produced manually or by automation. Stable releases follow a deliberate release decision. PR test builds stay private and are never published to this downloads repository.
 
